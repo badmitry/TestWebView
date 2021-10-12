@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         webView = findViewById(R.id.webView) as WebView
         val webSettings = webView!!.settings
-        webSettings.javaScriptEnabled = false
+        webSettings.javaScriptEnabled = true
         val webViewClient = SimpleWebViewClientImpl(this)
         webView?.webViewClient = webViewClient
         webView?.loadUrl("https://yandex.ru")
